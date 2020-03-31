@@ -7,6 +7,9 @@
 package problem5.circularqueue;
 
 import problem5.node.Node;
+import problem5.student.Student;
+
+import java.util.ArrayList;
 
 //to implement circular queue
 public class MyCircularQueue {
@@ -17,4 +20,8 @@ public class MyCircularQueue {
         front = null;
         size = 0;
     }
+    public void enqueue(ArrayList<Student> addData){
+
+    }
+
 }
