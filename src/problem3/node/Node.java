@@ -32,4 +32,10 @@ public class Node {
         this.next = next;
     }
 
+    public Student getData() {
+        return student;
+    }
+    public Student getRollNumber(){
+        return student;
+    }
 }
