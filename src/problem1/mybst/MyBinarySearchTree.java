@@ -36,4 +36,13 @@ public class MyBinarySearchTree {
         }
         return treeData;
     }
+    public void postOrder(TreeNode data) {
+        if (data == null) {
+            return;
+        }
+
+        postOrder(data.getLeft());
+        postOrder(data.getRight());
+        System.out.print(data.getData() + " ");
+    }
 }
