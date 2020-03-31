@@ -10,13 +10,17 @@ import problem3.node.Node;
 
 public class MyPriorityQueue {
     private Node rear;
-    private  Node front;
+    private Node front;
     private int size;
+
     public MyPriorityQueue() {
         front = null;
         rear = null;
         size = 0;
     }
 
+    public void enqueue(Node addData) {
 
+
+    }
 }
