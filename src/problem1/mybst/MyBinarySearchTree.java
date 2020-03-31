@@ -45,4 +45,17 @@ public class MyBinarySearchTree {
         postOrder(data.getRight());
         System.out.print(data.getData() + " ");
     }
+    private void LeftNode(TreeNode data) {
+        if (data == null)
+            return;
+        else {
+
+            if (data.getLeft() != null)
+                System.out.println(data.getLeft().getData());
+            else
+                count++;
+            LeftNode(data.getLeft());
+            LeftNode(data.getRight());
+        }
+    }
 }
