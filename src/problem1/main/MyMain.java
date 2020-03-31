@@ -25,7 +25,5 @@ public class MyMain {
         t.printLeftNode();
         System.out.println("Number of nodes doesn't have left child :");
         t.countNotLeft();
-
-
     }
 }
