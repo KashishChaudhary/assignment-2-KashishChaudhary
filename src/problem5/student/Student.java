@@ -39,4 +39,13 @@ public class Student {
                 '}';
     }
 
+    public String toStrings() {
+        return "Student{" +
+                "rollNumber=" + rollNumber +
+                ", Name='" + Name + '\'' +
+                ", backLogCounter=" + backLogCounter +
+                ", appearingCounter=" + appearingCounter +
+                '}';
+    }
+
 }
