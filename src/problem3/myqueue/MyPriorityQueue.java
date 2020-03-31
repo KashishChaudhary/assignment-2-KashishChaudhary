@@ -20,7 +20,11 @@ public class MyPriorityQueue {
     }
 
     public void enqueue(Node addData) {
-
+        if (front == null) {
+            rear = addData;
+            front = addData;
+            size++;
+        }
 
     }
 }
