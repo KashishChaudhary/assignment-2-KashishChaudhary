@@ -22,6 +22,8 @@ public class MyMain {
             }
             i--;
         }
-
+        MyBinarySearchTree.preOrder(t.data);
+        System.out.println();
+        t.postOrder(t.data);
     }
 }
