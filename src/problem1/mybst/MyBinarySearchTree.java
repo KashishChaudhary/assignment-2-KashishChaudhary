@@ -19,4 +19,21 @@ public class MyBinarySearchTree {
         preOrder(data.getRight());
         preOrderString.append(data.getData()).append(" ");
     }
+    public void add(final int value) {
+        this.data = addService(this.data, value);
+    }
+
+    public TreeNode addService(TreeNode treeData, final int addingValue) {
+        if (treeData == null) {
+            return new TreeNode(addingValue);
+        }
+        if (addingValue < treeData.getData()) {
+            treeData.setLeft(addService(treeData.getLeft(), addingValue));
+        } else if (addingValue == treeData.getData()) {
+            return treeData;
+        } else {
+            treeData.setRight(addService(treeData.getRight(), addingValue));
+        }
+        return treeData;
+    }
 }
