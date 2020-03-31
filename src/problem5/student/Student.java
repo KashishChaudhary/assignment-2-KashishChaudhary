@@ -6,6 +6,7 @@ public class Student {
     private String Name;
     private int backLogCounter;
     private int appearingCounter;
+
     public Student(int rollNumber, String name) {
         this.rollNumber = rollNumber;
         Name = name;
@@ -16,7 +17,17 @@ public class Student {
         this.backLogCounter = backLogCounter;
         this.appearingCounter = appearingCounter;
     }
+    public int getRollNumber() {
+        return rollNumber;
+    }
 
-    public boolean getRollNumber() {
+
+    public int getBackLogCounter() {
+        return backLogCounter;
+    }
+
+
+    public int getAppearingCounter() {
+        return appearingCounter;
     }
 }
