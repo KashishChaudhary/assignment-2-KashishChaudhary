@@ -20,6 +20,6 @@ public class MyMain {
         myPriorityQueue.enqueue(new Node(new Student(50, "abhi")));
         myPriorityQueue.enqueue(new Node(new Student(11, "Jio")));
         myPriorityQueue.enqueue(new Node(new Student(55, "Chaudhary")));
-
+        myPriorityQueue.printQueue();
     }
 }
