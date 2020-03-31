@@ -26,4 +26,5 @@ public class MyMain {
         System.out.println();
         t.postOrder(t.data);
     }
+
 }
