@@ -38,5 +38,9 @@ public class MyQueue {
             temp = temp.getNext();
         }
     }
+    static class Node {
+        int data;
+        Node next;
 
-}
+
+    }
