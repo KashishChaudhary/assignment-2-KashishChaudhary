@@ -21,6 +21,11 @@ public class MyMain {
             }
             i--;
         }
+        System.out.println("All Left-children are :");
+        t.printLeftNode();
+        System.out.println("Number of nodes doesn't have left child :");
+        t.countNotLeft();
+
 
     }
 }
