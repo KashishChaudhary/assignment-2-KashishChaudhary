@@ -1,9 +1,4 @@
-/*
- *  Created by IntelliJ IDEA.
- *  User: Vaibhav
- *  Date: 23-Mar-20
- *  Time: 7:06 PM
- */
+
 package problem5.circularqueue;
 
 import problem5.node.Node;
@@ -49,5 +44,17 @@ public class MyCircularQueue {
             }
         }
     }
+    public void printQueue() {
+        Node temp = this.front;
+        for (int i = 0; i < this.size; i++) {
+            if (i != this.size - 1) {
+                System.out.print(temp.getData().toStrings() + "--->");
+                temp = temp.getNext();
+            } else {
+                System.out.println(temp.getData().toStrings());
+            }
+        }
+    }
+
 
 }
