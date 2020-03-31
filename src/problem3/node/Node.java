@@ -35,7 +35,5 @@ public class Node {
     public Student getData() {
         return student;
     }
-    public Student getRollNumber(){
-        return student;
-    }
+
 }
