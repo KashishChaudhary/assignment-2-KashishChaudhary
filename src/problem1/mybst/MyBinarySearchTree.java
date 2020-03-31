@@ -7,4 +7,6 @@
 package problem1.mybst;
 // to implement BinarySearchTree
 public class MyBinarySearchTree {
+    public static StringBuilder preOrderString;
+
 }
