@@ -19,4 +19,5 @@ public class MyMain {
         System.out.print("\nPre-Order successor of all the nodes :-  ");
         m.getPreSucc();
     }
+
 }
