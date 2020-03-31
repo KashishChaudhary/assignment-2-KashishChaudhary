@@ -15,5 +15,8 @@ public class MyMain {
         t.add(45);
         t.add(25);
         MyQueue m = new MyQueue();
+        m.preSuccessor(tree.data);
+        System.out.print("\nPre-Order successor of all the nodes :-  ");
+        m.getPreSucc();
     }
 }
