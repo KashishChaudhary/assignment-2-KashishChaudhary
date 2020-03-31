@@ -35,5 +35,4 @@ public class Node {
     public Student getData() {
         return student;
     }
-
 }
