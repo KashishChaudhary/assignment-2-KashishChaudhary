@@ -1,6 +1,7 @@
 
 package problem5.main;
 
+import problem5.circularqueue.MyCircularQueue;
 import problem5.student.Student;
 
 import java.util.ArrayList;
@@ -20,5 +21,7 @@ public class MyMain {
         studentList.add(new Student(9, "Irt", 9, 6));
         studentList.add(new Student(10, "Jlki", 0, 0));
         studentList.add(new Student(11, "chaudhary", 2, 1));
+
+        MyCircularQueue sQueue = new MyCircularQueue();
     }
 }
