@@ -21,7 +21,33 @@ public class MyCircularQueue {
         size = 0;
     }
     public void enqueue(ArrayList<Student> addData){
+        for (Student s : addData)
+        {
+            if (s.getBackLogCounter() - s.getAppearingCounter() == 0) {
 
+            }
+            else if (s.getBackLogCounter() - s.getAppearingCounter() > 0) {
+                Node temp = new Node(s);
+                if (this.front == null) {
+                    front = temp;
+                    temp.setNext(temp);
+                    size++;
+                }
+                else {
+                    temp.setNext(this.front);
+                    Node parser = this.front;
+                    while (parser.getNext() != this.front) {
+                        parser = parser.getNext();
+                    }
+                    parser.setNext(temp);
+                    front = temp;
+                    size++;
+                }
+            }
+            else {
+                System.out.println("Given Data is not Valid");
+            }
+        }
     }
 
 }
